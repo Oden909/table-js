@@ -20,11 +20,11 @@ function generateTable(){
 
 generateTable();
 
-function addRandomNumber() {
+function addRandomNumber(){
     let table = document.getElementById('newTable');
-    for (let i = 0; i < table.rows.length; i++) {
+    for (let i = 0; i < table.rows.length; i++){
         let row = table.rows[i];
-        let cell = row.insertCell(-1); // Вставляем ячейку в конец строки
+        let cell = row.insertCell(-1);
         let randomNumber = Math.floor(Math.random() * 100);
         cell.textContent = randomNumber;
         if (randomNumber >= 50) {
